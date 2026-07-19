@@ -12,4 +12,5 @@ class Handler(BaseHTTPRequestHandler):
 
         self.wfile.write(b"Hello from my container!\n")
 
+
 HTTPServer(('0.0.0.0', 8000), Handler).serve_forever()
